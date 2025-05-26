@@ -1,11 +1,17 @@
 ---
-title: "lukaslescano.github.io"
+image: media/headshot.jpeg
+toc: false
+about: 
+  template: jolla
+  image-shape: round
+  image-width: 17em
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/lukas-lescano
+    - text: GitHub
+      href: https://github.com/lperusa7
+    - text: Email
+      href: mailto::lukaslescano@ucsb.edu
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+Hi everyone! I'm Lukas Lescano. I'm currently a 3rd year undergraduate at the University of California, Santa Barbara. I'm currently pursuing a Bachelor of Science in Environmental Studies with an emphasis in Energy and Sustainability. I'm very passionate about the coming Clean Energy Transformation as well as the path to decarbonizing the Electricity Sector.

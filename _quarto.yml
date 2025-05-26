@@ -3,18 +3,22 @@ project:
   output-dir: docs
 
 website:
-  title: "mysite"
+  title: "Lukas Lescano"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+      - href: resume-CV.qmd
+        text: Synopsis
+      - portfolio.qmd
+      - coursework.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: darkly
     css: styles.css
     toc: true
+    page-layout: full
 
 editor: visual
-
