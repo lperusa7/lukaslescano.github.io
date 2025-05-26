@@ -5,7 +5,7 @@ project:
 website:
   title: "Lukas Lescano"
   navbar:
-    left:
+    right:
       - href: index.qmd
         text: Home
       - about.qmd
@@ -13,6 +13,10 @@ website:
         text: Synopsis
       - portfolio.qmd
       - coursework.qmd
+  page-footer:
+    background: dark
+    left: Copyright 2025, Lukas Lescano
+    right: This website is built with [{{< fa brands github title="GitHub octocat logo" >}}](https://github.com/samanthacsik/samanthacsik.github.io){target=_blank}, [{{< fa brands r-project title="R Project" >}}](https://www.r-project.org/about.html){target=_blank}, and [Quarto](https://quarto.org/){target=_blank}
 
 format:
   html:
