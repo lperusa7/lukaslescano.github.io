@@ -1,16 +1,16 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Lukas Lescano",
+    "section": "",
+    "text": "Hi everyone! I’m Lukas Lescano. I’m currently a 3rd year undergraduate at the University of California, Santa Barbara. I’m currently pursuing a Bachelor of Science in Environmental Studies with an emphasis in Energy and Sustainability. I’m very passionate about the coming Clean Energy Transformation as well as the path to decarbonizing the Electricity Sector."
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "lukaslescano.github.io",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
   }
 ]
