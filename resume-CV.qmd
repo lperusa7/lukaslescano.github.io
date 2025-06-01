@@ -1,5 +1,15 @@
 ---
-title: "Resume/CV"
 format: html
 ---
 
+<h2>Resume</h2>
+
+<iframe src="files/Lukas_Lescano_Resume.pdf" width="100%" height="800px" style="border: none;">
+
+</iframe>
+
+<h2>Cover Letter</h2>
+
+<iframe src="files/Lukas_Lescano_Cover_Letter.pdf" width="100%" height="800px" style="border: none;">
+
+</iframe>
