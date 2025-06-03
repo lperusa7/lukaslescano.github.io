@@ -1,6 +1,8 @@
 [
   {
     "listing": "/posts.html",
-    "items": []
+    "items": [
+      "/posts/personal_data_collection_post/index.html"
+    ]
   }
 ]

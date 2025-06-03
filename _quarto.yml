@@ -11,7 +11,7 @@ website:
       - about.qmd
       - href: resume-CV.qmd
         text: Synopsis
-      - coursework.qmd
+      - hikes.qmd
       - posts.qmd
   page-footer:
     background: dark

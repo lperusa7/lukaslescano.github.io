@@ -1,0 +1,85 @@
+---
+title: "Hiking"
+format: html
+---
+
+Hiking has always been an important part of my life. I was introduced to it at a young age through weekend hikes with my family, and it later became a regular activity through trail running during cross country. I'm originally from Aliso Viejo, a city in Orange County, California, where I explored countless trails growing up. Since starting college at the University of California, Santa Barbara, I’ve continued this passion by hiking along the Santa Ynez Mountains and the stunning coastal trails nearby.
+
+Beyond being a hobby, hiking has long been a therapeutic outlet for me. It gives me space to disconnect from the fast pace of daily life and reconnect with the natural world. There’s something incredibly calming about the steady rhythm of walking and the stillness of a mountain trail. Whether it’s climbing toward a summit or wandering through a coastal bluff, these moments offer clarity, peace, and perspective.
+
+One of the most valuable aspects of hiking for me is the escape it provides from screens and constant digital noise. In a world that often feels overstimulated and always online, being out on the trail allows me to be fully present. No pings, no updates—just the sound of my steps and the natural surroundings. It’s in those quiet, unplugged moments that I often feel most grounded.
+
+This connection to hiking started early, with frequent hikes alongside my family. Some of my fondest memories come from those outings—sharing stories on the trail or simply enjoying nature in each other’s company. Even now, hiking continues to be a way for me to reflect, recharge, and feel rooted in the present moment.
+
+Below, you’ll find an interactive map of hikes I’ve completed both in Southern California and around Santa Barbara. You can also scroll down to see some of my favorite photos from the trail.
+
+🌟 My Top 5 Favorite Hikes
+
+#1 Top of the World – Laguna Beach, CA
+
+ Sweeping views of the Pacific and the surrounding canyons. A classic fand from my hometown. A core memory of mine.
+
+#2 Tangerine Falls – Santa Barbara, CA
+
+ A fun, challenging, rocky trail that leads to one of the tallest waterfalls in the area—best after a good rain.
+
+#3 Crystal Cove Loop – Laguna Beach, CA
+
+ Rolling hills, ocean views, and spring wildflowers—hard to beat.
+
+#4 Inspiration Point – Santa Barbara, CA
+
+ A go-to for sunrise hikes with an incredible overlook of the coast.
+
+#5 El Moro Canyon – Laguna Coast Wilderness Park, CA
+
+ Great trail variety and a strong nostalgia factor from childhood hikes.
+
+------------------------------------------------------------------------
+
+```{r set up}
+#| echo: false
+#| message: false
+#| warnng: false
+library(tidyverse)
+library(leaflet)
+library(leaflet.extras)
+library(here)
+library(janitor)
+
+# read in data from hikes
+hikes <- read_csv(here
+                  ("data", "hiking_cords.csv"))
+```
+
+```{r clean data}
+#| echo: false
+hikes_clean <- hikes |> 
+  clean_names()
+```
+
+```{r icon}
+#| echo: false
+hikes_icon <- makeIcon(
+  iconUrl = here::here("media", "hikes_icon2.png"),
+  iconWidth = 20, iconHeight = 20
+)
+```
+
+```{r making map}
+#| echo: false
+hikes_map <- leaflet() %>%
+  addProviderTiles(providers$Esri.WorldImagery) %>% 
+  setView(lng = -118.17, lat = 33.83, zoom = 7) %>%
+  addMarkers(data = hikes_clean,
+             group = "trail_names",
+             icon = hikes_icon,
+             lng = ~longitude,
+             lat = ~latitude,
+             popup = ~paste("Trail Name:", trail_names, "<br>", "Coordinates (lat/long):", latitude, ",", longitude))
+
+hikes_map
+
+```
+
+------------------------------------------------------------------------
