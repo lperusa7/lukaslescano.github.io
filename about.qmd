@@ -5,6 +5,57 @@ format: html
 
 I grew up in Orange County, California, where I spent most of my time outdoors—playing sports, hiking, trail running, and spending time at the beach. I was always a curious kid, constantly asking questions and trying to understand how things work. That same curiosity drives me today as I dive deep into topics like renewable energy technologies and energy efficiency.
 
+Below I have included a plethora of hikes in Santa Barbara and around Orange County, my hometown:
+
+------------------------------------------------------------------------
+
+```{r set up}
+#| echo: false
+#| message: false
+#| warnng: false
+library(tidyverse)
+library(leaflet)
+library(leaflet.extras)
+library(here)
+library(janitor)
+
+# read in data from hikes
+hikes <- read_csv(here
+                  ("data", "hiking_cords.csv"))
+```
+
+```{r clean data}
+#| echo: false
+hikes_clean <- hikes |> 
+  clean_names()
+```
+
+```{r icon}
+#| echo: false
+hikes_icon <- makeIcon(
+  iconUrl = here::here("media", "hikes_icon2.png"),
+  iconWidth = 20, iconHeight = 20
+)
+```
+
+```{r making map}
+#| echo: false
+hikes_map <- leaflet() %>%
+  addProviderTiles(providers$Esri.WorldImagery) %>% 
+  setView(lng = -118.17, lat = 33.83, zoom = 7) %>%
+  addMarkers(data = hikes_clean,
+             group = "trail_names",
+             icon = hikes_icon,
+             lng = ~longitude,
+             lat = ~latitude,
+             popup = ~paste("Trail Name:", trail_names, "<br>", "Coordinates (lat/long):", latitude, ",", longitude))
+
+hikes_map
+
+```
+
+------------------------------------------------------------------------
+
 At UCSB, I’m majoring in Environmental Studies with an emphasis in Energy and Sustainability. I’m especially interested in systems-level solutions for decarbonizing the electricity sector—like wind, solar, and battery storage—and I hope to build a career in consulting and project management in the clean energy space. I stay active on campus by participating in intramural soccer leagues, which keep me connected to my love for team sports and help balance my academic life.
 
 I’ve always loved working in teams, both in recreational and professional settings. Whether it’s collaborating on a group project or hexlping lead the execution of a larger team effort, I enjoy creating structured plans and helping others execute them effectively.
@@ -15,8 +66,8 @@ Outside of academics, I’m usually on the soccer field, exploring a new trail, 
 
 ------------------------------------------------------------------------
 
-<hr>
-
 ::: {style="display: flex; gap: 16px; justify-content: center;"}
 ![](media/YoungSoccerPic.jpg){alt="Hiking" width="33%"} <img src="media/sunset.jpg" alt="Sunset" width="33%"/>![](media/IMTeamPic.jpg){alt="Soccer" width="33%"}
 :::
+
+------------------------------------------------------------------------
