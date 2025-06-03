@@ -1,10 +1,17 @@
 [
   {
+    "objectID": "hikes.html",
+    "href": "hikes.html",
+    "title": "Hiking",
+    "section": "",
+    "text": "I’ve gone on a decent amount of hikes, whether it was from trail running during cross country or going on hikes with my friends. As previously mentioned I’m from a city called Aliso Viejo, California which is in Orange County. During my times before university I’ve done a large amount of hikes within my area, and during my time at the University of California Santa Barbara, I have done many hikes along the Santa Ynez mountains as well as some beach trails.\nBelow I have included a plethora of hikes in Santa Barbara and around Orange County, my hometown:"
+  },
+  {
     "objectID": "posts.html",
     "href": "posts.html",
     "title": "Portfolio",
     "section": "",
-    "text": "No matching items"
+    "text": "Personal Data Collection\n\n\n\nCoursework\n\n\n\nThe resulting data and code from my personal data dollection project for my Env S 193DS class\n\n\n\nLukas Lescano\n\n\nJun 3, 2025\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -12,6 +19,27 @@
     "title": "Lukas Lescano",
     "section": "",
     "text": "Hi everyone! I’m Lukas Lescano, a third-year undergraduate at the University of California, Santa Barbara. I’m pursuing a Bachelor of Science in Environmental Studies with an emphasis in Energy and Sustainability. I’m passionate about the clean energy transition and the path toward decarbonizing the electricity sector.\nGrowing up with a deep appreciation for nature and a curiosity about how systems work, I became committed to helping build a more sustainable and equitable energy future.\nI’m especially interested in technology and systems planning, and I aim to work on scalable solutions for renewable energy integration and sustainable infrastructure."
+  },
+  {
+    "objectID": "posts/personal_data_collection_post/index.html",
+    "href": "posts/personal_data_collection_post/index.html",
+    "title": "Personal Data Collection",
+    "section": "",
+    "text": "In this project I explored how my productivity levels changed based on the music genre I listened to. I wanted to explore this topic because listening to music is a big part of my life and I was curious to dive into the effect that the music genres had on me. To collect my data, after a study session I would gather the following data: Study Period (min), Tasks Completed, Music Genre, Work Environment, Number of Distractions, Time of Day, Amount of Sleep, and Productivity. The productivity variable was a calculated variable. To calculate it I made sure to distinguish the levels of tasks, level 1 to level 5, by the time it should take for a task. These are my judgement before completing the task on how long the task itself should take normally. For example, I level 1 task should take around up to 30 minutes, a level 2 task should take 30 minutes to an hour, a level 3 should take 1-2 hours, and level 4 task should take 2-4 hours, and a level 5 task should take more than 4 hours."
+  },
+  {
+    "objectID": "posts/personal_data_collection_post/index.html#making-visualization-of-personal-data",
+    "href": "posts/personal_data_collection_post/index.html#making-visualization-of-personal-data",
+    "title": "Personal Data Collection",
+    "section": "Making Visualization of Personal Data",
+    "text": "Making Visualization of Personal Data"
+  },
+  {
+    "objectID": "posts/personal_data_collection_post/index.html#creating-an-affective-visualization",
+    "href": "posts/personal_data_collection_post/index.html#creating-an-affective-visualization",
+    "title": "Personal Data Collection",
+    "section": "Creating an Affective Visualization",
+    "text": "Creating an Affective Visualization"
   },
   {
     "objectID": "about.html",

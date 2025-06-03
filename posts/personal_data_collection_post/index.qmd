@@ -1,0 +1,117 @@
+---
+title: "Personal Data Collection"
+description: "The resulting data and code from my personal data dollection project for my Env S 193DS class"
+author:
+  - name: Lukas Lescano
+    url: https://lperusa7.github.io/lukaslescano.github.io/
+date: 06-03-2025
+categories: [Coursework]
+citation:
+  url: https://lperusa7.github.io/lukaslescano.github.io/posts/personal_data_collection_post/
+image: affective_visualization.jpg
+draft: false
+format: html
+---
+
+In this project I explored how my productivity levels changed based on the music genre I listened to. I wanted to explore this topic because listening to music is a big part of my life and I was curious to dive into the effect that the music genres had on me. To collect my data, after a study session I would gather the following data: Study Period (min), Tasks Completed, Music Genre, Work Environment, Number of Distractions, Time of Day, Amount of Sleep, and Productivity. The productivity variable was a calculated variable. To calculate it I made sure to distinguish the levels of tasks, level 1 to level 5, by the time it should take for a task. These are my judgement before completing the task on how long the task itself should take normally. For example, I level 1 task should take around up to 30 minutes, a level 2 task should take 30 minutes to an hour, a level 3 should take 1-2 hours, and level 4 task should take 2-4 hours, and a level 5 task should take more than 4 hours.
+
+## Making Visualization of Personal Data
+
+# Setup
+
+```{r, message=FALSE, warning=FALSE}
+
+library(tidyverse)
+library(here)
+library(flextable)
+library(readxl)
+library(janitor)
+
+# read in personal data
+personal <- read_csv(
+  # file path
+  here("posts", "personal_data_collection_post", "personal_data_v2.csv"))
+```
+
+# Cleaning Data
+
+```{r, data-cleaning}
+# creatig clean data frame
+personal_cleaned <- personal |> # choosing personal data frame
+  # cleaning column names
+  clean_names() |> # cleaning names
+  select(date, study_period, music_genre, work_environment, time_of_day, sleep, productivity) # selecting columns for cleaned data frame
+```
+
+# Visualization
+
+```{r, making-plot}
+ggplot(data = personal_cleaned, # choose data frame
+       aes(x = music_genre, # assign x-axis
+           y = productivity, # assign y-axis
+           fill = music_genre)) + # assign boxes by music_genre
+  geom_boxplot(color = "black") + # make box plot
+  scale_fill_manual(values = c(    # assign custom colors to each genre
+    "Classical" = "#66c2a5",
+    "No Music" = "#ffd92f",
+    "Lofi" = "purple",
+    "Indie Rock" = "darkgrey"
+  )) +
+  geom_jitter(width = 0.2, # making points jitter horizontally
+              alpha = 0.5, # making points slightly transparent
+              color = "black") + # making points black
+  stat_summary(fun = mean, # calculate the mean of productivity for each music genre
+             geom = "point", # add a point at the mean value
+             color = "firebrick", # set the point color to a muted red for emphasis
+             size = 5) + # increase point size for visibility
+  labs(x = "Music Genre", # changing label for x-axis
+       y = "Productivity (Tasks completed per hour)", # changing label for y-axis
+       title = "Average Task Completion Rate Based on Music Genre") + # adding title name
+  theme_minimal() + # adding minimal theme
+  theme(legend.position = "none") # getting rid of legend
+```
+
+# Figure Caption
+
+**Figure 1. Productivity Rate is highest when listening to Classical music** 
+Data from 'personal_data_v2.csv' (Lescano, L. 2025). Points represent individual study period productivity rate (total n = 16), jittered horizontally to reduce overlap. Bold horizontal line represents the mean productivity rate for the group.
+
+# Summarizing Data and Make Table
+
+```{r, summarizing-data}
+# Step 1: Summarise the data by music genre
+
+summary_table <- personal_cleaned |> # creating summarized data object
+  group_by(music_genre) |> # group rows by music genre
+  summarise(mean_productivity = round(mean(productivity, # calculates mean within each group
+                                           na.rm = TRUE), 1))
+# Step 2: Create and format flextable
+
+flextable(summary_table) |> # create a table from the summary data
+  set_header_labels( # rename column headers for clarity
+    music_genre = "Music Genre",
+    mean_productivity = "Mean Productivity (Tasks Completed per Hour)"
+  ) |> 
+    align(j = "mean_productivity", align = "center", part = "all") |> #center values in productivity column
+  color(color = "white", part = "all") |>  # make the color white
+  autofit() |> # auto-adjust column widths to fit content
+  add_header_lines("Average Productivity Rate by Music Genre") # add a custom title above the table
+```
+
+For this project, I also created an affective visualization from the results I found from my visualization above.
+
+## Creating an Affective Visualization
+
+# Description
+
+An affective visualization of my personal data could take the form of a stylized soundwave, where each genre is represented by a different color and the line thickness represents my productivity level. If one music genre has a higher productivity rate, then the peaks will be greater and it will appear more like a crescendo. This would visually and emotionally connect the act of studying with the type of music I was listening to, blending form with feeling. The visualization would not only communicate data, but how it felt to study with each kind of music, ultimately by the difference in productivity rates visually represented. 
+
+# Affective Visualization
+
+![](affective_visualization.jpg)
+
+# Artistic Statement
+
+This piece visualizes how different music genres impacted my productivity during study sessions. Each wave represents a genre, with the height and flow of the line representing the average rate at which I completed tasks, translating data into emotional rhythm.
+I was inspired by the affective visual strategies of Jill Pelto, who integrates data into landscape art, and the Dear Data project by Posavec and Lupi, which emphasized personal, emotional storytelling through visual abstraction. I aimed to combine sound wave aesthetics with gentle color gradients to create a sense of movement and tone.
+The form is a hand-drawn illustration, using colored pencil and ink to create layered waveforms that reflect the amplitude of productivity across music genres. The organic lines and textures evoke a more personal, emotional connection to the data.
