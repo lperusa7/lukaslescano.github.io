@@ -1,6 +1,6 @@
 ---
 title: "Solar and Battery Storage Design Project"
-desciption: "Coursework for Env S 105 - Renewable Energy Systems"
+description: "Coursework for Env S 105 - Renewable Energy Systems"
 author:
   - name: Lukas Lescano
     url: https://lperusa7.github.io/lukaslescano.github.io/
@@ -13,4 +13,4 @@ draft: false
 format: html
 ---
 
-For this project
+In this project
