@@ -5,7 +5,7 @@ author:
   - name: Lukas Lescano
     url: https://lperusa7.github.io/lukaslescano.github.io/
 date: 06-03-2025
-categories: [Coursework]
+categories: [Coursework, Personal Data Exploration Project]
 citation:
   url: https://lperusa7.github.io/lukaslescano.github.io/posts/personal_data_collection_post/
 image: affective_visualization.jpg
