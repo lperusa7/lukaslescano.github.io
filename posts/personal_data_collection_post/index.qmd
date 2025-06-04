@@ -73,8 +73,7 @@ ggplot(data = personal_cleaned, # choose data frame
 
 # Figure Caption
 
-**Figure 1. Productivity Rate is highest when listening to Classical music** 
-Data from 'personal_data_v2.csv' (Lescano, L. 2025). Points represent individual study period productivity rate (total n = 16), jittered horizontally to reduce overlap. Bold horizontal line represents the mean productivity rate for the group.
+**Figure 1. Productivity Rate is highest when listening to Classical music** Data from 'personal_data_v2.csv' (Lescano, L. 2025). Points represent individual study period productivity rate (total n = 16), jittered horizontally to reduce overlap. Bold horizontal line represents the mean productivity rate for the group.
 
 # Summarizing Data and Make Table
 
@@ -104,7 +103,7 @@ For this project, I also created an affective visualization from the results I f
 
 # Description
 
-An affective visualization of my personal data could take the form of a stylized soundwave, where each genre is represented by a different color and the line thickness represents my productivity level. If one music genre has a higher productivity rate, then the peaks will be greater and it will appear more like a crescendo. This would visually and emotionally connect the act of studying with the type of music I was listening to, blending form with feeling. The visualization would not only communicate data, but how it felt to study with each kind of music, ultimately by the difference in productivity rates visually represented. 
+An affective visualization of my personal data could take the form of a stylized soundwave, where each genre is represented by a different color and the line thickness represents my productivity level. If one music genre has a higher productivity rate, then the peaks will be greater and it will appear more like a crescendo. This would visually and emotionally connect the act of studying with the type of music I was listening to, blending form with feeling. The visualization would not only communicate data, but how it felt to study with each kind of music, ultimately by the difference in productivity rates visually represented.
 
 # Affective Visualization
 
@@ -112,6 +111,4 @@ An affective visualization of my personal data could take the form of a stylized
 
 # Artistic Statement
 
-This piece visualizes how different music genres impacted my productivity during study sessions. Each wave represents a genre, with the height and flow of the line representing the average rate at which I completed tasks, translating data into emotional rhythm.
-I was inspired by the affective visual strategies of Jill Pelto, who integrates data into landscape art, and the Dear Data project by Posavec and Lupi, which emphasized personal, emotional storytelling through visual abstraction. I aimed to combine sound wave aesthetics with gentle color gradients to create a sense of movement and tone.
-The form is a hand-drawn illustration, using colored pencil and ink to create layered waveforms that reflect the amplitude of productivity across music genres. The organic lines and textures evoke a more personal, emotional connection to the data.
+This piece visualizes how different music genres impacted my productivity during study sessions. Each wave represents a genre, with the height and flow of the line representing the average rate at which I completed tasks, translating data into emotional rhythm. I was inspired by the affective visual strategies of Jill Pelto, who integrates data into landscape art, and the Dear Data project by Posavec and Lupi, which emphasized personal, emotional storytelling through visual abstraction. I aimed to combine sound wave aesthetics with gentle color gradients to create a sense of movement and tone. The form is a hand-drawn illustration, using colored pencil and ink to create layered waveforms that reflect the amplitude of productivity across music genres. The organic lines and textures evoke a more personal, emotional connection to the data.
