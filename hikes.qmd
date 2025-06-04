@@ -13,29 +13,43 @@ This connection to hiking started early, with frequent hikes alongside my family
 
 Below, you’ll find an interactive map of hikes I’ve completed both in Southern California and around Santa Barbara. You can also scroll down to see some of my favorite photos from the trail.
 
-🌟 My Top 5 Favorite Hikes
+------------------------------------------------------------------------
 
-#1 Top of the World – Laguna Beach, CA
+### 🌟 My Top 5 Favorite Hikes
 
- Sweeping views of the Pacific and the surrounding canyons. A classic fand from my hometown. A core memory of mine.
+**#1 Top of the World – Laguna Beach, CA**
 
-#2 Tangerine Falls – Santa Barbara, CA
+ **Difficulty**: Moderate
+
+ Sweeping views of the Pacific and the surrounding canyons. A classic from my hometown. A core memory of mine.
+
+**#2 Tangerine Falls – Santa Barbara, CA**
+
+ **Difficulty**: Hard
 
  A fun, challenging, rocky trail that leads to one of the tallest waterfalls in the area—best after a good rain.
 
-#3 Crystal Cove Loop – Laguna Beach, CA
+**#3 Crystal Cove Loop – Laguna Beach, CA**
+
+ **Difficulty**: Moderate
 
  Rolling hills, ocean views, and spring wildflowers—hard to beat.
 
-#4 Inspiration Point – Santa Barbara, CA
+**#4 Inspiration Point – Santa Barbara, CA**
+
+ **Difficulty**: Moderate
 
  A go-to for sunrise hikes with an incredible overlook of the coast.
 
-#5 El Moro Canyon – Laguna Coast Wilderness Park, CA
+**#5 El Moro Canyon – Laguna Coast Wilderness Park, CA**
+
+ **Difficulty**: Moderate
 
  Great trail variety and a strong nostalgia factor from childhood hikes.
 
 ------------------------------------------------------------------------
+
+### 🗺 Hikes Map
 
 ```{r set up}
 #| echo: false
@@ -83,3 +97,56 @@ hikes_map
 ```
 
 ------------------------------------------------------------------------
+
+Below are some photos from hikes I’ve done over the years, including two memorable international hikes—one along the coastal ridgeline of Diamond Head in Hawaii, and another through the lush, tropical landscape of El Yunque Rainforest in Puerto Rico. Each of these trails offered a unique perspective and remains a highlight of my hiking experiences.
+
+### 🥾 El Yunque – Puerto Rico
+**A hike through lush tropical rainforest with waterfalls and mountain views.**
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <img src="media/hike_pictures/PR1.jpg" width="275">
+  <img src="media/hike_pictures/PR2.jpg" width="275">
+  <img src="media/hike_pictures/PR3.jpg" width="275">
+  <img src="media/hike_pictures/PR4.jpg" width="275">
+  <img src="media/hike_pictures/PR5.jpg" width="275">
+  <img src="media/hike_pictures/PR6.jpg" width="275">
+</div>
+
+### 🌋 Diamond Head – Hawaii
+**A popular coastal hike that climbs along the edge of a volcanic crater, offering panoramic views of Honolulu and the Pacific Ocean.**
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <img src="media/hike_pictures/H1.jpg" width="275">
+  <img src="media/hike_pictures/H2.jpg" width="275">
+  <img src="media/hike_pictures/H3.jpg" width="275">
+  <img src="media/hike_pictures/H4.jpg" width="275">
+  <img src="media/hike_pictures/H5.jpg" width="275">
+  <img src="media/hike_pictures/H6.jpg" width="275">
+</div>
+
+### 🌄 Top of the World – Aliso Viejo, CA
+**A hometown favorite with sweeping views of Orange County and the coastline—especially beautiful at sunset.**
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <img src="media/hike_pictures/TOTW_1.jpg" width="275">
+  <img src="media/hike_pictures/TOTW_2.jpg" width="275">
+  <img src="media/hike_pictures/TOTW_3.jpg" width="275">
+</div>
+
+### 💧 Tangerine Falls – Santa Barbara, CA
+**A fun, challenging, rocky trail that leads to one of the tallest waterfalls in the area—best after a good rain.**
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <img src="media/hike_pictures/TF1.jpg" width="275">
+  <img src="media/hike_pictures/TF2.jpg" width="275">
+  <img src="media/hike_pictures/TF3.jpg" width="275">
+</div>
+
+### 🌲 Black Star Canyon – Orange County, CA
+**A rugged backcountry trail known for its dramatic canyon walls, creek crossings, and a bit of local legend and history.**
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <img src="media/hike_pictures/BS1.jpg" width="275">
+  <img src="media/hike_pictures/BS2.jpg" width="275">
+  <img src="media/hike_pictures/BS3.jpg" width="275">
+</div>
