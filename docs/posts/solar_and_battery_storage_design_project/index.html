@@ -123,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
+    <div class="quarto-title column-page-left">
       <h1 class="title">Solar and Battery Storage Design Project</h1>
                   <div>
         <div class="description">
@@ -137,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
     
   
-  <div class="quarto-title-meta column-page">
+  <div class="quarto-title-meta column-page-left">
 
       <div>
       <div class="quarto-title-meta-heading">Author</div>
@@ -160,18 +160,60 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview">Project Overview</a></li>
+  <li><a href="#site-selection-and-demand-modeling" id="toc-site-selection-and-demand-modeling" class="nav-link" data-scroll-target="#site-selection-and-demand-modeling">Site Selection and Demand Modeling</a></li>
+  <li><a href="#modeling-assumptions-and-tools" id="toc-modeling-assumptions-and-tools" class="nav-link" data-scroll-target="#modeling-assumptions-and-tools">Modeling Assumptions and Tools</a></li>
+  <li><a href="#battery-dispatch-logic" id="toc-battery-dispatch-logic" class="nav-link" data-scroll-target="#battery-dispatch-logic">Battery Dispatch Logic</a></li>
+  <li><a href="#key-outputs-and-metrics" id="toc-key-outputs-and-metrics" class="nav-link" data-scroll-target="#key-outputs-and-metrics">Key Outputs and Metrics</a></li>
+  <li><a href="#takeaways-and-reflections" id="toc-takeaways-and-reflections" class="nav-link" data-scroll-target="#takeaways-and-reflections">Takeaways and Reflections</a></li>
+  <li><a href="#model-files" id="toc-model-files" class="nav-link" data-scroll-target="#model-files">Model Files</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
 
+<section id="project-overview" class="level3">
+<h3 class="anchored" data-anchor-id="project-overview">Project Overview</h3>
+<p>For this project, my colleagues and I designed a residential or commercial solar photovoltaic (PV) system paired with optional battery energy storage (BESS), using Excel modeling and the NREL PVWatts online tool. The objective was to evaluate system performance, electricity bill impacts, and financial viability under California’s Net Energy Metering (NEM) 2.0 policy.</p>
+</section>
+<section id="site-selection-and-demand-modeling" class="level3">
+<h3 class="anchored" data-anchor-id="site-selection-and-demand-modeling">Site Selection and Demand Modeling</h3>
+<p>For the location of our project, we selected a real residential site—one of my colleague’s homes in Isla Vista, California. Using the actual annual electricity utility bills, we were able to model the household’s year-round energy demand with realistic assumptions. The system was designed under California’s NEM 2.0 policy, which offers less favorable compensation for excess solar energy exported to the grid. As a result, we optimized the PV system to meet approximately 90–95% of the household’s annual electricity demand, minimizing surplus generation. After refining system parameters and capacity, our final design met 93.84% of the home’s annual energy needs through solar production.</p>
+</section>
+<section id="modeling-assumptions-and-tools" class="level3">
+<h3 class="anchored" data-anchor-id="modeling-assumptions-and-tools">Modeling Assumptions and Tools</h3>
+<p>The analysis included key parameters such as monthly and hourly electricity demand– explained above–, utility time-of-use (TOU) rates, solar irradiance, and technical specifications for both PV and battery systems. For the Excel model framework, we simulated hourly generation and demand for an entire year, allowing me to assess net electricity imports, state-of-charge (SOC) dynamics, and cost comparisons across scenarios: no solar, solar-only, and solar plus battery storage.</p>
+</section>
+<section id="battery-dispatch-logic" class="level3">
+<h3 class="anchored" data-anchor-id="battery-dispatch-logic">Battery Dispatch Logic</h3>
+<p>To model the battery energy storage system (BESS), we followed a simplified dispatch algorithm guided by solar availability, time-of-use (TOU) rates, and system constraints. The battery was programmed to charge only when two conditions were met: (1) there was a solar surplus (generation exceeded demand), and (2) TOU electricity rates were low—typically during off-peak periods. The amount of energy charged was limited by the minimum of three values: the solar surplus available, the battery’s maximum power capacity, and the remaining energy capacity (determined by the difference between the maximum storage limit and the current state of charge).</p>
+<p>Similarly, the battery was set to discharge only during solar deficits (when demand exceeded solar generation) and during high TOU rate periods—typically from 4 PM to 9 PM. Discharge was capped by the smallest of three limits: the current solar deficit, the battery’s maximum power output, and the existing state of charge. This algorithm allowed us to maximize bill savings by shifting solar energy from low-cost times to high-cost demand periods, while staying within technical and energy constraints. For this exercise, we ignored charging/discharging efficiency losses to keep the model focused on dispatch logic and financial outcomes.</p>
+</section>
+<section id="key-outputs-and-metrics" class="level3">
+<h3 class="anchored" data-anchor-id="key-outputs-and-metrics">Key Outputs and Metrics</h3>
+<p>The final outputs included metrics like percentage of demand met by solar, annual bill savings, levelized cost of energy (LCOE), and simple payback period—providing a holistic view of both the environmental and economic performance of the proposed system.</p>
+</section>
+<section id="takeaways-and-reflections" class="level3">
+<h3 class="anchored" data-anchor-id="takeaways-and-reflections">Takeaways and Reflections</h3>
+<p>This project gave me valuable hands-on experience in designing and analyzing distributed solar and battery storage systems. I deepened my understanding of how time-of-use electricity pricing, net metering policies, and system sizing interact to affect both energy performance and economic outcomes. Working with real-world data—from solar irradiance to utility rates—helped me connect technical modeling with policy and financial considerations. Most importantly, the project reinforced the importance of designing systems that are not only efficient, but also aligned with user demand patterns and local market incentives. These skills and insights will be directly applicable to future work in renewable energy planning and sustainable energy solutions.</p>
+</section>
+<section id="model-files" class="level3">
+<h3 class="anchored" data-anchor-id="model-files">Model Files</h3>
+<p>If you’d like to explore the full data set — including hourly demand, solar generation, and battery behavior — you can download the original Excel model here:</p>
+<p><a href="../../posts/solar_and_battery_storage_design_project/Lukas_Lescano_solar_excel_model.xlsx">Download Full Excel Model (XLSX)</a></p>
 
 
+</section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{lescano2025,
   author = {Lescano, Lukas},

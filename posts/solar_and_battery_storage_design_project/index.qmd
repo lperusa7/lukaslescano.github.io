@@ -43,6 +43,6 @@ This project gave me valuable hands-on experience in designing and analyzing dis
 
 If you’d like to explore the full data set — including hourly demand, solar generation, and battery behavior — you can download the original Excel model here:
 
-[Download Full Excel Model (XLSX)](../../posts/solar_and_battery_storage_design_project/solar_excel_model.xlsx)
+[Download Full Excel Model (XLSX)](../../posts/solar_and_battery_storage_design_project/Lukas_Lescano_solar_excel_model.xlsx)
 
 
