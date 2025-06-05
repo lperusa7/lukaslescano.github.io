@@ -1,6 +1,6 @@
 ---
 title: "Personal Data Collection"
-description: "The resulting data and code from my personal data dollection project for my Env S 193DS class"
+description: "Personal data collection and analysis project completed for Env S 193DS, using R and Quarto for data visualization and statistical modeling."
 author:
   - name: Lukas Lescano
     url: https://lperusa7.github.io/lukaslescano.github.io/
