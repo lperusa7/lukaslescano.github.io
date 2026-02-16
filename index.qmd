@@ -18,8 +18,10 @@ about:
       href: mailto::lukaslescano@ucsb.edu
 ---
 
-Hi everyone! I'm Lukas Lescano, a third-year undergraduate at the University of California, Santa Barbara. I'm pursuing a Bachelor of Science in Environmental Studies with an emphasis in Energy and Sustainability. I'm passionate about the clean energy transition and the path toward decarbonizing the electricity sector.
+Hi, I’m Lukas Lescano, a fourth-year undergraduate at the University of California, Santa Barbara pursuing a Bachelor of Science in Environmental Studies with an emphasis in GIS and Energy & Sustainability.
 
-Growing up with a deep appreciation for nature and a curiosity about how systems work, I became committed to helping build a more sustainable and equitable energy future.
+I’m driven by the challenge of accelerating the clean energy transition through data-informed planning and systems-level thinking. My academic and project work focuses on renewable energy integration, spatial analysis, and strategic approaches to decarbonization.
 
-I'm especially interested in technology and systems planning, and I aim to work on scalable solutions for renewable energy integration and sustainable infrastructure.
+Growing up with a deep appreciation for natural systems and an interest in how complex systems function, I developed a passion for designing solutions that are both equitable and environmentally sustainable.
+
+I am particularly interested in applying GIS, data analysis, and strategic planning to advance renewable energy deployment and resilient infrastructure.
