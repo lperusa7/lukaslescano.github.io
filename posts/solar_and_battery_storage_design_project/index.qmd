@@ -49,5 +49,6 @@ If you’d like to explore the full data set — including hourly demand, solar 
 
 Below, I’ve included the NREL PVWatts Calculator results, which were used to inform several key system assumptions such as solar irradiance, system losses, and annual generation estimates.
 
-<iframe src="../../posts/solar_and_battery_storage_design_project/PVWatts_results.pdf" width="100%" height="800px"></iframe>
+<iframe src="../../posts/solar_and_battery_storage_design_project/PVWatts_results.pdf" width="100%" height="800px">
 
+</iframe>
