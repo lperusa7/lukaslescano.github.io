@@ -1,0 +1,15 @@
+---
+title: "Rivian Horizontal Integration into the Electric Tractor Market"
+description: "Strategic proposal examining Rivian’s horizontal expansion into digitally integrated electric farming equipment. Leveraged Blue Ocean Strategy, Resource-Based View(RBV), and Porter's Five Forces to evaluate differentiation, scalability, and market disruption potential."
+author:
+  - name: Lukas Lescano
+    url: https://lperusa7.github.io/lukaslescano.github.io/
+date: 06-09-25
+categories: [Coursework]
+citation:
+  url: https://lperusa7.github.io/lukaslescano.github.io/posts/rivian_horizontal_integration_project/
+draft: false
+image: rivian_tractor.png
+format: html
+---
+
