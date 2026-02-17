@@ -1,0 +1,15 @@
+---
+title: "Coastal Refill: A Sustainable Retail Business Strategy"
+description: "Designed a sustainability-driven retail concept centered on refillable goods and reusable products. Conducted market research, financial modeling, and operational planning to evaluate feasibility and long-term impact within a local community context."
+author:
+  - name: Lukas Lescano
+    url: https://lperusa7.github.io/lukaslescano.github.io/
+date: 07-31-25
+categories: [Coursework]
+citation:
+  url: https://lperusa7.github.io/lukaslescano.github.io/posts/coastal_refill_business_plan/
+draft: true
+image: rivian_tractor.png
+format: html
+---
+
