@@ -3,15 +3,15 @@ title: "About Me"
 format: html
 ---
 
-I grew up in Orange County, California, where I spent most of my time outdoors—playing sports, hiking, trail running, and spending time at the beach. I was always a curious kid, constantly asking questions and trying to understand how things work. That same curiosity drives me today as I dive deep into topics like renewable energy technologies and energy efficiency.
+I grew up in Orange County, California, where I spent much of my time outdoors, playing sports, hiking, trail running, and spending time at the beach. From a young age, I was constantly asking questions and trying to understand how systems function. That curiosity has evolved into a deep interest in how energy systems, infrastructure, and spatial data shape the world around us.
 
-At UCSB, I’m majoring in Environmental Studies with an emphasis in Energy and Sustainability. I’m especially interested in systems-level solutions for decarbonizing the electricity sector—like wind, solar, and battery storage—and I hope to build a career in consulting and project management in the clean energy space. I stay active on campus by participating in intramural soccer leagues, which keep me connected to my love for team sports and help balance my academic life.
+I am currently pursuing a Bachelor of Science in Environmental Studies at UC Santa Barbara, with an emphasis in GIS and Energy & Sustainability. My academic and project work focuses on renewable energy integration, geospatial analysis, and systems-level approaches to decarbonization. I am particularly interested in how spatial data, strategic planning, and emerging technologies can accelerate the transition toward resilient, low-carbon infrastructure.
 
-I’ve always loved working in teams, both in recreational and professional settings. Whether it’s collaborating on a group project or helping lead the execution of a larger team effort, I enjoy creating structured plans and helping others execute them effectively.
+I am drawn to roles that combine technical analysis with structured problem-solving, whether in consulting, energy planning, or project management. I enjoy building clear frameworks, organizing complex information, and working collaboratively to turn ideas into actionable strategies.
 
-What motivates me most is impact. I believe working in the energy sector is not only intellectually rewarding, but also deeply fulfilling. As someone with family roots in Peru, I’ve seen the disparities in energy access and quality of life firsthand. One of my long-term goals is to work on international projects that help communities—especially in places like South America—benefit from sustainable and resilient energy systems.
+What motivates me most is impact. Working in the energy sector is both intellectually challenging and personally meaningful. As someone with family roots in Peru, I have seen firsthand how disparities in energy access can affect quality of life and economic opportunity. In the long term, I hope to contribute to international projects that expand sustainable and reliable energy systems in underserved regions, particularly across Latin America.
 
-Outside of academics, I’m usually on the soccer field, exploring a new trail, spending time at the beach, or catching the sunset with my friends. I’m also really into personal development—whether that’s listening to lifestyle and productivity podcasts, journaling to reflect and set goals, tracking my habits, or experimenting with new ways to optimize my daily routine. I enjoy the process of self-improvement just as much as I enjoy learning about how we can build smarter, more sustainable systems.
+Outside of academics and professional development, I stay active through soccer, hiking, and spending time outdoors. I also value personal growth and continuous improvement, whether through reflective journaling, productivity systems, or exploring ways to optimize how I learn and work. I approach both sustainability and self-development with the same mindset: incremental improvements compound into meaningful long-term change.
 
 ------------------------------------------------------------------------
 
