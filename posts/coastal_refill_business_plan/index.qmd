@@ -8,8 +8,11 @@ date: 07-31-25
 categories: [Coursework]
 citation:
   url: https://lperusa7.github.io/lukaslescano.github.io/posts/coastal_refill_business_plan/
-draft: true
-image: rivian_tractor.png
+draft: false
+image: coastal_refill_logo_1.png
 format: html
 ---
+
+### Project Overview
+
 
