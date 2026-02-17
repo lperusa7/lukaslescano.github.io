@@ -5,10 +5,11 @@ author:
   - name: Lukas Lescano
     url: https://lperusa7.github.io/lukaslescano.github.io/
 date: 12-1-25
-categories: [Coursework]
+categories: [GIS & Spatial Analysis, Energy & Infrastructure]
 citation:
   url: https://lperusa7.github.io/lukaslescano.github.io/posts/EV_connectivity_Dublin_Texas_proj/
 draft: true
 image: EV_charging_project.jpg
 format: html
 ---
+

@@ -5,7 +5,7 @@ author:
   - name: Lukas Lescano
     url: https://lperusa7.github.io/lukaslescano.github.io/
 date: 05-02-25
-categories: [Coursework]
+categories: [Energy & Infrastructure, Financial Modeling]
 citation:
   url: https://lperusa7.github.io/lukaslescano.github.io/posts/solar_and_battery_storage_design_project/
 image: solar_project_background.jpg

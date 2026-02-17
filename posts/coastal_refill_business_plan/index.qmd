@@ -5,7 +5,7 @@ author:
   - name: Lukas Lescano
     url: https://lperusa7.github.io/lukaslescano.github.io/
 date: 07-31-25
-categories: [Coursework]
+categories: [Sustainable Business, Strategy & Innovation]
 citation:
   url: https://lperusa7.github.io/lukaslescano.github.io/posts/coastal_refill_business_plan/
 draft: false

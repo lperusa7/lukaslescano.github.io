@@ -5,7 +5,7 @@ author:
   - name: Lukas Lescano
     url: https://lperusa7.github.io/lukaslescano.github.io/
 date: 06-09-25
-categories: [Coursework]
+categories: [Strategy & Innovation, Energy & Infrastructure]
 citation:
   url: https://lperusa7.github.io/lukaslescano.github.io/posts/rivian_horizontal_integration_project/
 draft: false
