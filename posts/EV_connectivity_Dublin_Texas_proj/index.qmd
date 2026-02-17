@@ -8,8 +8,85 @@ date: 12-1-25
 categories: [GIS & Spatial Analysis, Energy & Infrastructure]
 citation:
   url: https://lperusa7.github.io/lukaslescano.github.io/posts/EV_connectivity_Dublin_Texas_proj/
-draft: true
+draft: false
 image: EV_charging_project.jpg
 format: html
 ---
 
+### Project Overview
+
+This project examines how electric vehicle (EV) charging infrastructure connectivity influences EV adoption patterns. Using comparative spatial analysis between Texas (United States) and Ireland, we evaluated charger distribution, population density, and historical fuel station networks to identify infrastructure gaps and inform strategic expansion planning.
+
+The objective was to develop a spatial framework that could guide future EV infrastructure investment in underdeveloped regions of the United States by drawing lessons from Ireland’s more distributed and policy-supported charging network.
+
+### Research Question
+
+How can EV charging connectivity in the United States be improved by applying spatial insights from Ireland's infrastructure development?
+
+### Study Areas & Rationale
+
+- Texas was selected as a case study because, despite being economically developed, its EV infrastructure remains uneven and highly concentrated in major metropolitan areas.
+- Ireland was selected due to its comparatively progressive EV policy environment and more distributed rural charging network.
+- Comparing a large U.S. state to a smaller European country required normalization through population density, infrastructure ratios, and spatial accessibility metrics.
+
+### Data Methodology
+
+## Data Sources
+
+- EV charging station point data (Texas & Ireland)
+- Gas station location data
+- Population density rasters (WorldPop)
+- Administrative boundaries (county and city-level)
+- OpenStreetMap road networks
+
+## Spatial Techniques Applied
+
+- Euclidean Distance Analysis to calculate average distance to nearest charger and gas station
+- Zonal Statistics to compute mean accessibility by county (Texas) and city (Ireland)
+- Overlay Analysis comparing EV chargers and gas station networks
+- Population density overlays to evaluate service alignment with high-demand areas
+- Infrastructure-to-population ratio calculations for urban centers
+
+The Euclidean distance raster allowed us to measure spatial accessibility and directly compare charger density relative to historical gas station infrastructure.
+
+### Key Findings
+
+- EV infrastructure in Texas is heavily clustered in major metropolitan areas (Houston, Dallas, Austin), leaving substantial spatial gaps in suburban and rural zones.
+- Ireland’s charging network is more evenly distributed relative to population centers, improving commuter feasibility.
+- Travis County (Austin) exhibited the strongest EV-to-gas station ratio in Texas.
+- Several Texas counties had fewer chargers relative to gas infrastructure compared to Dublin.
+- Many Texas charging stations contain only 2–4 chargers per site, while gas stations typically offer 6+ pumps, highlighting a logistical throughput constraint.
+- EV adoption appears positively correlated with charger density, reinforcing the infrastructure-first expansion strategy.
+
+### Infrastructure & Planning Implications
+
+The analysis suggests that improving EV adoption in Texas requires:
+
+- Expanding charging coverage beyond dense urban cores into commuter buffer zones.
+- Increasing charger count per site to improve throughput and reduce wait times.
+- Prioritizing high-population counties where gas station density significantly exceeds EV charger density.
+- Aligning EV infrastructure planning with historic gas station spatial logic.
+
+Ireland’s distributed network model demonstrates that rural connectivity plays a critical role in normalizing EV feasibility for daily commuters.
+
+Strategic infrastructure expansion must therefore focus not only on urban density but also on interstitial commuter corridors.
+
+### Project Challenges
+
+- Harmonizing spatial data across different countries with varying reporting standards.
+- Normalizing population and infrastructure metrics across drastically different land areas.
+- Time constraints limited expansion to additional comparative countries.
+
+### Deliverables
+
+## Interactive StoryMap
+
+This project is presented in an interactive ArcGIS StoryMap format, featuring comparative spatial analysis, geoprocessing workflows, and visual infrastructure overlays.
+
+[View the Interactive StoryMap →](https://storymaps.arcgis.com/stories/0a201f753c6a444bbc27142de60b8b3d){.btn .btn-primary}
+
+## Data Documentation
+
+::: {.callout-note title="EV Infrastructure Data Documentation" collapse="true"}
+[Download Data & Methodology Documentation (PDF)](EV_proj_data_documentation.pdf)
+:::

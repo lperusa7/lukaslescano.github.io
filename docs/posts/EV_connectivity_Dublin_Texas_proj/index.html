@@ -73,7 +73,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<meta name="quarto:status" content="draft">
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -82,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner"><div id="quarto-draft-alert" class="alert alert-warning"><i class="bi bi-pencil-square"></i>Draft</div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -128,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
+    <div class="quarto-title column-page-left">
       <h1 class="title">Improving EV Infrastructure Connectivity with Spatial Data</h1>
                   <div>
         <div class="description">
@@ -136,13 +135,14 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">Coursework</div>
+                <div class="quarto-category">GIS &amp; Spatial Analysis</div>
+                <div class="quarto-category">Energy &amp; Infrastructure</div>
               </div>
                   </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page">
+  <div class="quarto-title-meta column-page-left">
 
       <div>
       <div class="quarto-title-meta-heading">Author</div>
@@ -165,18 +165,136 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview">Project Overview</a></li>
+  <li><a href="#research-question" id="toc-research-question" class="nav-link" data-scroll-target="#research-question">Research Question</a></li>
+  <li><a href="#study-areas-rationale" id="toc-study-areas-rationale" class="nav-link" data-scroll-target="#study-areas-rationale">Study Areas &amp; Rationale</a></li>
+  <li><a href="#data-methodology" id="toc-data-methodology" class="nav-link" data-scroll-target="#data-methodology">Data Methodology</a></li>
+  <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources">Data Sources</a></li>
+  <li><a href="#spatial-techniques-applied" id="toc-spatial-techniques-applied" class="nav-link" data-scroll-target="#spatial-techniques-applied">Spatial Techniques Applied</a>
+  <ul class="collapse">
+  <li><a href="#key-findings" id="toc-key-findings" class="nav-link" data-scroll-target="#key-findings">Key Findings</a></li>
+  <li><a href="#infrastructure-planning-implications" id="toc-infrastructure-planning-implications" class="nav-link" data-scroll-target="#infrastructure-planning-implications">Infrastructure &amp; Planning Implications</a></li>
+  <li><a href="#project-challenges" id="toc-project-challenges" class="nav-link" data-scroll-target="#project-challenges">Project Challenges</a></li>
+  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables">Deliverables</a></li>
+  </ul></li>
+  <li><a href="#interactive-storymap" id="toc-interactive-storymap" class="nav-link" data-scroll-target="#interactive-storymap">Interactive StoryMap</a></li>
+  <li><a href="#data-documentation" id="toc-data-documentation" class="nav-link" data-scroll-target="#data-documentation">Data Documentation</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
 
+<section id="project-overview" class="level3">
+<h3 class="anchored" data-anchor-id="project-overview">Project Overview</h3>
+<p>This project examines how electric vehicle (EV) charging infrastructure connectivity influences EV adoption patterns. Using comparative spatial analysis between Texas (United States) and Ireland, we evaluated charger distribution, population density, and historical fuel station networks to identify infrastructure gaps and inform strategic expansion planning.</p>
+<p>The objective was to develop a spatial framework that could guide future EV infrastructure investment in underdeveloped regions of the United States by drawing lessons from Ireland’s more distributed and policy-supported charging network.</p>
+</section>
+<section id="research-question" class="level3">
+<h3 class="anchored" data-anchor-id="research-question">Research Question</h3>
+<p>How can EV charging connectivity in the United States be improved by applying spatial insights from Ireland’s infrastructure development?</p>
+</section>
+<section id="study-areas-rationale" class="level3">
+<h3 class="anchored" data-anchor-id="study-areas-rationale">Study Areas &amp; Rationale</h3>
+<ul>
+<li>Texas was selected as a case study because, despite being economically developed, its EV infrastructure remains uneven and highly concentrated in major metropolitan areas.</li>
+<li>Ireland was selected due to its comparatively progressive EV policy environment and more distributed rural charging network.</li>
+<li>Comparing a large U.S. state to a smaller European country required normalization through population density, infrastructure ratios, and spatial accessibility metrics.</li>
+</ul>
+</section>
+<section id="data-methodology" class="level3">
+<h3 class="anchored" data-anchor-id="data-methodology">Data Methodology</h3>
+</section>
+<section id="data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="data-sources">Data Sources</h2>
+<ul>
+<li>EV charging station point data (Texas &amp; Ireland)</li>
+<li>Gas station location data</li>
+<li>Population density rasters (WorldPop)</li>
+<li>Administrative boundaries (county and city-level)</li>
+<li>OpenStreetMap road networks</li>
+</ul>
+</section>
+<section id="spatial-techniques-applied" class="level2">
+<h2 class="anchored" data-anchor-id="spatial-techniques-applied">Spatial Techniques Applied</h2>
+<ul>
+<li>Euclidean Distance Analysis to calculate average distance to nearest charger and gas station</li>
+<li>Zonal Statistics to compute mean accessibility by county (Texas) and city (Ireland)</li>
+<li>Overlay Analysis comparing EV chargers and gas station networks</li>
+<li>Population density overlays to evaluate service alignment with high-demand areas</li>
+<li>Infrastructure-to-population ratio calculations for urban centers</li>
+</ul>
+<p>The Euclidean distance raster allowed us to measure spatial accessibility and directly compare charger density relative to historical gas station infrastructure.</p>
+<section id="key-findings" class="level3">
+<h3 class="anchored" data-anchor-id="key-findings">Key Findings</h3>
+<ul>
+<li>EV infrastructure in Texas is heavily clustered in major metropolitan areas (Houston, Dallas, Austin), leaving substantial spatial gaps in suburban and rural zones.</li>
+<li>Ireland’s charging network is more evenly distributed relative to population centers, improving commuter feasibility.</li>
+<li>Travis County (Austin) exhibited the strongest EV-to-gas station ratio in Texas.</li>
+<li>Several Texas counties had fewer chargers relative to gas infrastructure compared to Dublin.</li>
+<li>Many Texas charging stations contain only 2–4 chargers per site, while gas stations typically offer 6+ pumps, highlighting a logistical throughput constraint.</li>
+<li>EV adoption appears positively correlated with charger density, reinforcing the infrastructure-first expansion strategy.</li>
+</ul>
+</section>
+<section id="infrastructure-planning-implications" class="level3">
+<h3 class="anchored" data-anchor-id="infrastructure-planning-implications">Infrastructure &amp; Planning Implications</h3>
+<p>The analysis suggests that improving EV adoption in Texas requires:</p>
+<ul>
+<li>Expanding charging coverage beyond dense urban cores into commuter buffer zones.</li>
+<li>Increasing charger count per site to improve throughput and reduce wait times.</li>
+<li>Prioritizing high-population counties where gas station density significantly exceeds EV charger density.</li>
+<li>Aligning EV infrastructure planning with historic gas station spatial logic.</li>
+</ul>
+<p>Ireland’s distributed network model demonstrates that rural connectivity plays a critical role in normalizing EV feasibility for daily commuters.</p>
+<p>Strategic infrastructure expansion must therefore focus not only on urban density but also on interstitial commuter corridors.</p>
+</section>
+<section id="project-challenges" class="level3">
+<h3 class="anchored" data-anchor-id="project-challenges">Project Challenges</h3>
+<ul>
+<li>Harmonizing spatial data across different countries with varying reporting standards.</li>
+<li>Normalizing population and infrastructure metrics across drastically different land areas.</li>
+<li>Time constraints limited expansion to additional comparative countries.</li>
+</ul>
+</section>
+<section id="deliverables" class="level3">
+<h3 class="anchored" data-anchor-id="deliverables">Deliverables</h3>
+</section>
+</section>
+<section id="interactive-storymap" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-storymap">Interactive StoryMap</h2>
+<p>This project is presented in an interactive ArcGIS StoryMap format, featuring comparative spatial analysis, geoprocessing workflows, and visual infrastructure overlays.</p>
+<p><a href="https://storymaps.arcgis.com/stories/0a201f753c6a444bbc27142de60b8b3d" class="btn btn-primary">View the Interactive StoryMap →</a></p>
+</section>
+<section id="data-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="data-documentation">Data Documentation</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="EV Infrastructure Data Documentation">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>EV Infrastructure Data Documentation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="EV_proj_data_documentation.pdf">Download Data &amp; Methodology Documentation (PDF)</a></p>
+</div>
+</div>
+</div>
 
 
+</section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{lescano2025,
   author = {Lescano, Lukas},
