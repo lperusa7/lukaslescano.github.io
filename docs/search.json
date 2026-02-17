@@ -110,5 +110,61 @@
     "title": "Improving EV Infrastructure Connectivity with Spatial Data",
     "section": "Data Documentation",
     "text": "Data Documentation\n\n\n\n\n\n\nNoteEV Infrastructure Data Documentation\n\n\n\n\n\nDownload Data & Methodology Documentation (PDF)"
+  },
+  {
+    "objectID": "posts/EV_connectivity_Dublin_Texas_proj/index.html#project-overview",
+    "href": "posts/EV_connectivity_Dublin_Texas_proj/index.html#project-overview",
+    "title": "Improving EV Infrastructure Connectivity with Spatial Data",
+    "section": "",
+    "text": "This project examines how electric vehicle (EV) charging infrastructure connectivity influences EV adoption patterns. Using comparative spatial analysis between Texas (United States) and Ireland, we evaluated charger distribution, population density, and historical fuel station networks to identify infrastructure gaps and inform strategic expansion planning.\nThe objective was to develop a spatial framework that could guide future EV infrastructure investment in underdeveloped regions of the United States by drawing lessons from Ireland’s more distributed and policy-supported charging network."
+  },
+  {
+    "objectID": "posts/EV_connectivity_Dublin_Texas_proj/index.html#research-question",
+    "href": "posts/EV_connectivity_Dublin_Texas_proj/index.html#research-question",
+    "title": "Improving EV Infrastructure Connectivity with Spatial Data",
+    "section": "Research Question",
+    "text": "Research Question\nHow can EV charging connectivity in the United States be improved by applying spatial insights from Ireland’s infrastructure development?"
+  },
+  {
+    "objectID": "posts/EV_connectivity_Dublin_Texas_proj/index.html#study-areas-rationale",
+    "href": "posts/EV_connectivity_Dublin_Texas_proj/index.html#study-areas-rationale",
+    "title": "Improving EV Infrastructure Connectivity with Spatial Data",
+    "section": "Study Areas & Rationale",
+    "text": "Study Areas & Rationale\n\nTexas was selected as a case study because, despite being economically developed, its EV infrastructure remains uneven and highly concentrated in major metropolitan areas.\nIreland was selected due to its comparatively progressive EV policy environment and more distributed rural charging network.\nComparing a large U.S. state to a smaller European country required normalization through population density, infrastructure ratios, and spatial accessibility metrics."
+  },
+  {
+    "objectID": "posts/EV_connectivity_Dublin_Texas_proj/index.html#data-methodology",
+    "href": "posts/EV_connectivity_Dublin_Texas_proj/index.html#data-methodology",
+    "title": "Improving EV Infrastructure Connectivity with Spatial Data",
+    "section": "Data Methodology",
+    "text": "Data Methodology\n\nData Sources\n\nEV charging station point data (Texas & Ireland)\nGas station location data\nPopulation density rasters (WorldPop)\nAdministrative boundaries (county and city-level)\nOpenStreetMap road networks\n\n\n\nSpatial Techniques Applied\n\nEuclidean Distance Analysis to calculate average distance to nearest charger and gas station\nZonal Statistics to compute mean accessibility by county (Texas) and city (Ireland)\nOverlay Analysis comparing EV chargers and gas station networks\nPopulation density overlays to evaluate service alignment with high-demand areas\nInfrastructure-to-population ratio calculations for urban centers\n\nThe Euclidean distance raster allowed us to measure spatial accessibility and directly compare charger density relative to historical gas station infrastructure."
+  },
+  {
+    "objectID": "posts/EV_connectivity_Dublin_Texas_proj/index.html#key-findings",
+    "href": "posts/EV_connectivity_Dublin_Texas_proj/index.html#key-findings",
+    "title": "Improving EV Infrastructure Connectivity with Spatial Data",
+    "section": "Key Findings",
+    "text": "Key Findings\n\nEV infrastructure in Texas is heavily clustered in major metropolitan areas (Houston, Dallas, Austin), leaving substantial spatial gaps in suburban and rural zones.\nIreland’s charging network is more evenly distributed relative to population centers, improving commuter feasibility.\nTravis County (Austin) exhibited the strongest EV-to-gas station ratio in Texas.\nSeveral Texas counties had fewer chargers relative to gas infrastructure compared to Dublin.\nMany Texas charging stations contain only 2–4 chargers per site, while gas stations typically offer 6+ pumps, highlighting a logistical throughput constraint.\nEV adoption appears positively correlated with charger density, reinforcing the infrastructure-first expansion strategy."
+  },
+  {
+    "objectID": "posts/EV_connectivity_Dublin_Texas_proj/index.html#infrastructure-planning-implications",
+    "href": "posts/EV_connectivity_Dublin_Texas_proj/index.html#infrastructure-planning-implications",
+    "title": "Improving EV Infrastructure Connectivity with Spatial Data",
+    "section": "Infrastructure & Planning Implications",
+    "text": "Infrastructure & Planning Implications\nThe analysis suggests that improving EV adoption in Texas requires:\n\nExpanding charging coverage beyond dense urban cores into commuter buffer zones.\nIncreasing charger count per site to improve throughput and reduce wait times.\nPrioritizing high-population counties where gas station density significantly exceeds EV charger density.\nAligning EV infrastructure planning with historic gas station spatial logic.\n\nIreland’s distributed network model demonstrates that rural connectivity plays a critical role in normalizing EV feasibility for daily commuters.\nStrategic infrastructure expansion must therefore focus not only on urban density but also on interstitial commuter corridors."
+  },
+  {
+    "objectID": "posts/EV_connectivity_Dublin_Texas_proj/index.html#project-challenges",
+    "href": "posts/EV_connectivity_Dublin_Texas_proj/index.html#project-challenges",
+    "title": "Improving EV Infrastructure Connectivity with Spatial Data",
+    "section": "Project Challenges",
+    "text": "Project Challenges\n\nHarmonizing spatial data across different countries with varying reporting standards.\nNormalizing population and infrastructure metrics across drastically different land areas.\nTime constraints limited expansion to additional comparative countries."
+  },
+  {
+    "objectID": "posts/EV_connectivity_Dublin_Texas_proj/index.html#deliverables",
+    "href": "posts/EV_connectivity_Dublin_Texas_proj/index.html#deliverables",
+    "title": "Improving EV Infrastructure Connectivity with Spatial Data",
+    "section": "Deliverables",
+    "text": "Deliverables\n\nInteractive StoryMap\nThis project is presented in an interactive ArcGIS StoryMap format, featuring comparative spatial analysis, geoprocessing workflows, and visual infrastructure overlays.\nView the Interactive StoryMap →\n\n\nData Documentation\n\n\n\n\n\n\nNoteEV Infrastructure Data Documentation\n\n\n\n\n\nDownload Data & Methodology Documentation (PDF)"
   }
 ]
