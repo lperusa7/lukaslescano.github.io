@@ -77,6 +77,8 @@ Longer travel times were classified as higher risk due to delayed suppression ca
 
 The final output was a non-overlapping fire response accessibility layer representing the minimum achievable response time across the county. This layer was subsequently converted to raster format and integrated into the weighted wildfire risk model.
 
+<iframe src="fire_risk_SB_img.jpg" width="100%" height="750px"></iframe>
+
 ## Weighted Raster Integration
 
 Following the independent development of each risk component, the Vegetation Risk, Fire Response Risk, and Wind & Precipitation Risk layers were integrated into a single composite wildfire risk surface using raster-based multi-criteria analysis.
