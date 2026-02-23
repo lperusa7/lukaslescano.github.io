@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Lukas Lescano">
-<meta name="dcterms.date" content="2025-07-31">
-<meta name="description" content="Designed a sustainability-driven retail concept centered on refillable goods and reusable products. Conducted market research, financial modeling, and operational planning to evaluate feasibility and long-term impact within a local community context.">
+<meta name="dcterms.date" content="2025-12-14">
+<meta name="description" content="Developed a multi-criteria wildfire risk model for Santa Barbara County using GIS-based spatial analysis. Led the network analysis component to evaluate emergency response accessibility by calculating travel distance to nearest fire stations, and integrated this layer with vegetation fuel risk, wind exposure, and precipitation data into a weighted composite raster surface.">
 
-<title>Coastal Refill: A Sustainable Retail Business Strategy – Lukas Lescano</title>
+<title>Modeling Wildfire Risk and Emergency Response Accessibility in Santa Barbara County – Lukas Lescano</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -128,15 +128,15 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">Coastal Refill: A Sustainable Retail Business Strategy</h1>
+      <h1 class="title">Modeling Wildfire Risk and Emergency Response Accessibility in Santa Barbara County</h1>
                   <div>
         <div class="description">
-          Designed a sustainability-driven retail concept centered on refillable goods and reusable products. Conducted market research, financial modeling, and operational planning to evaluate feasibility and long-term impact within a local community context.
+          Developed a multi-criteria wildfire risk model for Santa Barbara County using GIS-based spatial analysis. Led the network analysis component to evaluate emergency response accessibility by calculating travel distance to nearest fire stations, and integrated this layer with vegetation fuel risk, wind exposure, and precipitation data into a weighted composite raster surface.
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">Sustainable Business</div>
-                <div class="quarto-category">Strategy &amp; Innovation</div>
+                <div class="quarto-category">GIS &amp; Spatial Analysis</div>
+                <div class="quarto-category">Risk &amp; Modeling Focus</div>
               </div>
                   </div>
   </div>
@@ -154,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">July 31, 2025</p>
+        <p class="date">December 14, 2025</p>
       </div>
     </div>
     
@@ -171,12 +171,21 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview">Project Overview</a></li>
-  <li><a href="#identifying-the-opportunity" id="toc-identifying-the-opportunity" class="nav-link" data-scroll-target="#identifying-the-opportunity">Identifying the Opportunity</a></li>
-  <li><a href="#business-model-value-proposition" id="toc-business-model-value-proposition" class="nav-link" data-scroll-target="#business-model-value-proposition">Business Model &amp; Value Proposition</a></li>
-  <li><a href="#financial-feasibility-capital-strategy" id="toc-financial-feasibility-capital-strategy" class="nav-link" data-scroll-target="#financial-feasibility-capital-strategy">Financial Feasibility &amp; Capital Strategy</a></li>
-  <li><a href="#sustainability-community-impact" id="toc-sustainability-community-impact" class="nav-link" data-scroll-target="#sustainability-community-impact">Sustainability &amp; Community Impact</a></li>
-  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a></li>
-  <li><a href="#deliverable" id="toc-deliverable" class="nav-link" data-scroll-target="#deliverable">Deliverable</a></li>
+  <li><a href="#modeling-framework" id="toc-modeling-framework" class="nav-link" data-scroll-target="#modeling-framework">Modeling Framework</a></li>
+  <li><a href="#emergency-response-accessibility-network-analysis" id="toc-emergency-response-accessibility-network-analysis" class="nav-link" data-scroll-target="#emergency-response-accessibility-network-analysis">Emergency Response Accessibility (Network Analysis)</a>
+  <ul class="collapse">
+  <li><a href="#data-inputs" id="toc-data-inputs" class="nav-link" data-scroll-target="#data-inputs">Data Inputs</a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a></li>
+  <li><a href="#processing-risk-classification" id="toc-processing-risk-classification" class="nav-link" data-scroll-target="#processing-risk-classification">Processing &amp; Risk Classification</a></li>
+  <li><a href="#output" id="toc-output" class="nav-link" data-scroll-target="#output">Output</a></li>
+  </ul></li>
+  <li><a href="#weighted-raster-integration" id="toc-weighted-raster-integration" class="nav-link" data-scroll-target="#weighted-raster-integration">Weighted Raster Integration</a>
+  <ul class="collapse">
+  <li><a href="#weighting-strategy" id="toc-weighting-strategy" class="nav-link" data-scroll-target="#weighting-strategy">Weighting Strategy</a></li>
+  </ul></li>
+  <li><a href="#key-findings" id="toc-key-findings" class="nav-link" data-scroll-target="#key-findings">Key Findings</a></li>
+  <li><a href="#model-limitations-model-framing" id="toc-model-limitations-model-framing" class="nav-link" data-scroll-target="#model-limitations-model-framing">Model Limitations &amp; Model Framing</a></li>
+  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables">Deliverables</a></li>
   </ul>
 </nav>
     </div>
@@ -187,80 +196,137 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="project-overview" class="level3">
-<h3 class="anchored" data-anchor-id="project-overview">Project Overview</h3>
-<p>Coastal Refill is a proposed sustainability-focused retail venture designed to reduce single-use packaging waste through refillable household goods, reusable essentials, and eco-conscious consumer products. Developed as a comprehensive business strategy project, the initiative aimed to evaluate the feasibility of launching a community-centered low-waste store in Santa Barbara and Isla Vista.</p>
-<p>While contributing to concept development and organizational structure, I led the financial feasibility analysis, constructing detailed start-up cost estimates, revenue projections, operating expense models, and return-on-investment scenarios to evaluate long-term viability.</p>
+<section id="project-overview" class="level2">
+<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
+<p>Wildfires pose an ongoing threat to communities across Santa Barbara County, driven by fuel conditions, climatic exposure, and emergency response constraints. The objective of this project was to develop a spatial wildfire risk model that integrates environmental and infrastructure-based factors into a single decision-ready surface.</p>
+<p>Using GIS-based multi-criteria analysis, our team evaluated three primary components of wildfire risk: vegetation susceptibility, weather-related exposure (wind and precipitation), and emergency response accessibility. My primary responsibility focused on modeling fire response accessibility through network analysis to quantify travel time from fire stations across the county.</p>
+<p>The final output is a weighted composite raster map that identifies areas of elevated wildfire risk based on the combined influence of fuel conditions, climatic factors, and response-time disparities. This project demonstrates the application of spatial modeling techniques to support risk-informed planning and infrastructure decision-making.</p>
 </section>
-<section id="identifying-the-opportunity" class="level3">
-<h3 class="anchored" data-anchor-id="identifying-the-opportunity">Identifying the Opportunity</h3>
-<p>Single-use packaging dominates modern retail, particularly in household cleaning, personal care, and pantry goods. This model generates significant plastic waste and unnecessary emissions throughout the product life cycle. At the same time, consumer awareness of environmental impact continues to rise, particularly in sustainability-driven communities like Santa Barbara and Isla Vista.</p>
-<p>Coastal Refill was conceptualized to address this gap by introducing a refill-based retail model that reduces packaging waste while maintaining competitive pricing and product quality. By analyzing local demographics, consumer behavior trends, and sustainability culture in the region, we identified an opportunity to align environmental responsibility with a financially viable small-business model.</p>
+<section id="modeling-framework" class="level2">
+<h2 class="anchored" data-anchor-id="modeling-framework">Modeling Framework</h2>
+<p>The wildfire risk model was structured as a multi-criteria spatial framework integrating three core dimensions of risk:</p>
+<ol type="1">
+<li><p><u>Vegetation Susceptibility:</u><br> Fuel type plays a central role in wildfire behavior. Using historical wildfire perimeters and vegetation classification data, vegetation types were ranked based on the proportion of area previously burned. This produced a vegetation risk surface representing relative fuel vulnerability across the county.</p></li>
+<li><p><u>Climatic Exposure (Wind &amp; Precipitation):</u><br> Wind intensity and precipitation patterns influence fire spread potential and fuel dryness. These raster layers were reclassified into standardized risk categories and combined to generate a weather-based exposure surface.</p></li>
+<li><p><u>Emergency Response Accessibility:</u><br> Response time significantly affects suppression effectiveness. Areas located farther from fire stations face increased risk due to delayed containment. This component was modeled using network analysis to estimate travel-time accessibility.</p></li>
+</ol>
+<p>Each of these layers was processed independently and standardized before integration. The final wildfire risk surface was generated through weighted raster analysis, allowing environmental and infrastructure-based factors to be evaluated simultaneously within a unified spatial framework.</p>
 </section>
-<section id="business-model-value-proposition" class="level3">
-<h3 class="anchored" data-anchor-id="business-model-value-proposition">Business Model &amp; Value Proposition</h3>
-<p>Coastal Refill was designed around a refill-by-weight retail model, offering household cleaning products, personal care items, and pantry staples in bulk to minimize single-use packaging. Customers would purchase reusable containers or bring their own, paying only for the product volume dispensed. Complementary revenue streams included sustainable lifestyle goods and reusable household essentials.</p>
-<p>The value proposition centered on three pillars: affordability over time, measurable waste reduction, and community-based sustainability. By reducing packaging costs and sourcing in bulk, the model aimed to offer competitive pricing while maintaining healthy margins. A loyalty program and campus partnerships were incorporated to build recurring customer relationships and encourage long-term behavioral shifts toward low-waste consumption.</p>
-<p>Rather than competing solely on price, Coastal Refill differentiated itself through transparency, mission-driven branding, and local engagement, positioning sustainability not as a premium niche but as an accessible everyday choice.</p>
-</section>
-<section id="financial-feasibility-capital-strategy" class="level3">
-<h3 class="anchored" data-anchor-id="financial-feasibility-capital-strategy">Financial Feasibility &amp; Capital Strategy</h3>
-<p>To evaluate the viability of Coastal Refill, I developed a detailed financial model assessing start-up capital requirements, operating expenses, revenue projections, and long-term return potential.</p>
-<p>Start-up costs were estimated between approximately $47,000 and $60,000, including lease deposits, inventory procurement, store build-out, equipment, insurance, and initial marketing. Fixed costs such as rent and utilities were modeled alongside variable costs tied to inventory turnover and restocking frequency.</p>
-<p>Revenue projections were constructed under conservative, moderate, and optimistic demand scenarios, incorporating product mix assumptions and pricing strategy. Based on these projections, the business was expected to reach break-even in Year 3, with cumulative profitability exceeding $70,000 by Year 5 under steady 15–20% annual growth.</p>
-<p>This financial analysis translated the sustainability vision into measurable economic outcomes, ensuring the venture balanced environmental impact with operational realism.</p>
-</section>
-<section id="sustainability-community-impact" class="level3">
-<h3 class="anchored" data-anchor-id="sustainability-community-impact">Sustainability &amp; Community Impact</h3>
-<p>Coastal Refill was designed to function as more than a retail store; it was conceptualized as a localized systems intervention in everyday consumption patterns. By shifting purchasing behavior toward refill and reuse models, the venture aimed to reduce single-use packaging waste at the household level while promoting more circular consumption habits.</p>
-<p>Beyond environmental impact, the model emphasized community engagement. The proposed Isla Vista location leveraged walkability and student accessibility, while loyalty programs and campus partnerships were designed to foster recurring participation in low-waste practices. By embedding sustainability within daily routines, Coastal Refill sought to normalize environmentally responsible consumption rather than position it as a niche alternative.</p>
-<p>In this way, the project demonstrated how small-scale, community-centered businesses can contribute to broader sustainability transitions while remaining financially grounded.</p>
-</section>
-<section id="key-takeaways" class="level3">
-<h3 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h3>
+<section id="emergency-response-accessibility-network-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="emergency-response-accessibility-network-analysis">Emergency Response Accessibility (Network Analysis)</h2>
+<iframe src="Fire_Risk_Network_Analysis_Layers.png" width="100%" height="750px">
+</iframe>
+<p>To quantify emergency response disparities across Santa Barbara County, I conducted a network-based service area analysis using road infrastructure and fire station locations.</p>
+<section id="data-inputs" class="level3">
+<h3 class="anchored" data-anchor-id="data-inputs">Data Inputs</h3>
 <ul>
-<li>Mission-driven ventures require disciplined financial validation to remain viable long-term.</li>
-<li>Sustainable retail models must balance environmental impact with operational efficiency and margin structure.</li>
-<li>Community engagement can function as a structural competitive advantage rather than simply a marketing tool.</li>
-<li>Early-stage capital planning and scenario modeling significantly reduce venture risk.</li>
-<li>Behavioral change at the local level can contribute meaningfully to broader sustainability transitions.</li>
+<li>TIGER/Line Road Network (Vector Line)</li>
+<li>Santa Barbara County Fire Stations (Vector Point)</li>
 </ul>
 </section>
-<section id="deliverable" class="level3">
-<h3 class="anchored" data-anchor-id="deliverable">Deliverable</h3>
-<p>The complete business plan includes detailed market research, operational strategy, financial modeling, five-year projections, and implementation planning.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Coastal Refill – Full Business Plan
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<iframe src="WRIT_107B_Business_Plan.pdf" width="100%" height="800px">
-</iframe>
-</div>
-</div>
-</div>
+<section id="methodology" class="level3">
+<h3 class="anchored" data-anchor-id="methodology">Methodology</h3>
+<p>A network dataset was created from the county road layer within ArcGIS Network Analyst. Travel time, measured in minutes, was defined as the cost structure rather than straight-line distance to better reflect realistic emergency response conditions. Fire engines were assumed to travel at an average speed of 45 mph.</p>
+<p>Service areas were generated around each fire station using the following time cutoffs (minutes):</p>
+<ul>
+<li>0, 10, 20, 30, 50, 75, 100, and 150</li>
+</ul>
+<p>These intervals produced overlapping response-time polygons representing incremental accessibility zones.</p>
+</section>
+<section id="processing-risk-classification" class="level3">
+<h3 class="anchored" data-anchor-id="processing-risk-classification">Processing &amp; Risk Classification</h3>
+<p>Because service areas from multiple stations overlapped, further processing was required to assign each location a single minimum response-time value. The service areas were converted into ranked polygon layers and processed iteratively to remove overlaps, preserving only the shortest available response time for each area.</p>
+<p>A response-time risk ranking was then assigned:</p>
+<ul>
+<li>0–10 minutes → Risk Rank 1 (Lowest Risk)</li>
+<li>10–20 minutes → Risk Rank 2</li>
+<li>20–30 minutes → Risk Rank 3</li>
+<li>30–50 minutes → Risk Rank 4</li>
+<li>50–75 minutes → Risk Rank 5</li>
+<li>75–100 minutes → Risk Rank 6</li>
+<li>100–150 minutes → Risk Rank 7 (Highest Risk)</li>
+</ul>
+<p>Longer travel times were classified as higher risk due to delayed suppression capacity and increased opportunity for fire spread.</p>
+</section>
+<section id="output" class="level3">
+<h3 class="anchored" data-anchor-id="output">Output</h3>
+<p>The final output was a non-overlapping fire response accessibility layer representing the minimum achievable response time across the county. This layer was subsequently converted to raster format and integrated into the weighted wildfire risk model.</p>
+</section>
+</section>
+<section id="weighted-raster-integration" class="level2">
+<h2 class="anchored" data-anchor-id="weighted-raster-integration">Weighted Raster Integration</h2>
+<p>Following the independent development of each risk component, the Vegetation Risk, Fire Response Risk, and Wind &amp; Precipitation Risk layers were integrated into a single composite wildfire risk surface using raster-based multi-criteria analysis.</p>
+<p>Before integration, all layers were projected into a common coordinate system, standardized to the same cell size, and aligned using a shared snap raster to ensure spatial consistency. The Fire Response Risk layer, originally generated as vector polygons, was converted to raster format to allow pixel-level analysis within the Raster Calculator.</p>
+<section id="weighting-strategy" class="level3">
+<h3 class="anchored" data-anchor-id="weighting-strategy">Weighting Strategy</h3>
+<p>To determine appropriate weighting, historical wildfire perimeter data were used as a reference layer to visually assess spatial agreement with each risk surface. Both the Vegetation Risk and Fire Response Risk layers demonstrated strong correspondence with past burn patterns:</p>
+<ul>
+<li>The <b>Vegetation Risk layer</b> captured fuel types with historically higher burn proportions.</li>
+<li>The <b>Fire Response Risk layer</b> highlighted areas where extended travel times may have contributed to larger or more difficult-to-control fires.</li>
+</ul>
+<p>In contrast, the combined Wind and Precipitation layer exhibited less spatial variability and weaker alignment with historical fire extents.</p>
+<p>Based on this evaluation, the following weighting scheme was applied in the Raster Calculator:</p>
+<ul>
+<li>Vegetation Risk × 2</li>
+<li>Fire Response Risk × 2</li>
+<li>Wind &amp; Precipitation Risk × 1</li>
+</ul>
+<p>This 2:2:1 weighting structure reflects the greater explanatory relevance of fuel conditions and emergency accessibility relative to climatic variability in the context of observed fire history.</p>
+<p>The resulting weighted raster represents the combined influence of environmental susceptibility and response-time disparities, producing a spatially differentiated wildfire risk surface across Santa Barbara County.</p>
+</section>
+</section>
+<section id="key-findings" class="level2">
+<h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
+<p>The final weighted wildfire risk surface revealed spatial patterns driven by both environmental fuel conditions and emergency response accessibility.</p>
+<p>High-risk zones were concentrated in areas characterized by burn-prone vegetation types combined with extended response times from fire stations. In particular, regions located farther from established fire infrastructure exhibited elevated composite risk values, even when climatic factors remained moderate. This underscores the importance of emergency accessibility as a contributing factor in wildfire vulnerability.</p>
+<p>Urban-adjacent areas with shorter travel times generally displayed lower composite risk rankings, reflecting the moderating influence of rapid suppression capacity. However, transitional zones between developed and wildland areas emerged as critical areas of concern, where combustible vegetation and delayed response intersect.</p>
+<p>The weighting strategy reinforced the significance of vegetation susceptibility and response-time disparities in shaping the final risk distribution. While wind and precipitation contributed to overall variability, they demonstrated less differentiating power relative to fuel and accessibility factors.</p>
+<p>Overall, the model highlights how infrastructure distribution and land cover conditions interact to produce spatially uneven wildfire risk across Santa Barbara County. These findings emphasize the importance of incorporating emergency response accessibility into regional hazard planning frameworks.</p>
+</section>
+<section id="model-limitations-model-framing" class="level2">
+<h2 class="anchored" data-anchor-id="model-limitations-model-framing">Model Limitations &amp; Model Framing</h2>
+<p>While the final wildfire risk map provides a structured spatial assessment of vulnerability across Santa Barbara County, an important conceptual distinction emerged during the modeling process: wildfire risk is not a single phenomenon, but can represent different stages of fire dynamics.</p>
+<p>The model developed in this project most closely reflects wildfire spread risk, rather than ignition probability. The weighting scheme emphasized vegetation susceptibility and emergency response accessibility, highlighting areas where fuel conditions and delayed suppression capacity may allow fires to expand more rapidly once ignited.</p>
+<p>However, if the objective were to model wildfire ignition risk, the analytical framework would differ. An ignition-focused model would prioritize variables that influence fire start probability, such as:</p>
+<ul>
+<li>Vegetation and fuel type</li>
+<li>Fuel moisture</li>
+<li>Precipitation deficits</li>
+<li>Slope and topography</li>
+<li>Human infrastructure or ignition sources</li>
+</ul>
+<p>In contrast, a spread-focused model would emphasize:</p>
+<ul>
+<li>Wind exposure</li>
+<li>Emergency response time</li>
+<li>Road accessibility</li>
+<li>Fuel continuity</li>
+<li>Terrain features influencing fire behavior</li>
+</ul>
+<p>This distinction suggests that the current workflow could be separated into two independent modeling frameworks, each calibrated with its own weighting structure and validation approach. Such separation would improve clarity of purpose and allow for more precise risk communication.</p>
+<p>Additionally, the applied 2:2:1 weighting scheme was heuristic rather than statistically calibrated. Although informed by visual comparison with historical fire perimeters, future iterations could incorporate spatial autocorrelation tests, hotspot analysis, or sensitivity analysis to quantitatively validate weighting decisions.</p>
+<p>Data integration also posed technical challenges. Raster and vector datasets from multiple sources required careful projection alignment, cell-size standardization, and overlap resolution. Intersecting wildfire perimeters with vegetation layers introduced potential duplication of burned areas due to overlapping fire histories, requiring cautious interpretation.</p>
+<p>Future improvements could include incorporating slope, fuel moisture, and additional climatic indices, as well as performing formal model validation against past fire spread patterns.</p>
+<p>Despite these limitations, the project demonstrates how multi-criteria spatial analysis can integrate environmental and infrastructure-based variables into decision-support tools for hazard planning.</p>
+</section>
+<section id="deliverables" class="level2">
+<h2 class="anchored" data-anchor-id="deliverables">Deliverables</h2>
 
 
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{lescano2025,
   author = {Lescano, Lukas},
-  title = {Coastal {Refill:} {A} {Sustainable} {Retail} {Business}
-    {Strategy}},
-  date = {2025-07-31},
-  url = {https://lperusa7.github.io/lukaslescano.github.io/posts/coastal_refill_business_plan/},
+  title = {Modeling {Wildfire} {Risk} and {Emergency} {Response}
+    {Accessibility} in {Santa} {Barbara} {County}},
+  date = {2025-12-14},
+  url = {https://lperusa7.github.io/lukaslescano.github.io/posts/Fire_Risk_SB_proj/},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-lescano2025" class="csl-entry quarto-appendix-citeas" role="listitem">
-Lescano, Lukas. 2025. <span>“Coastal Refill: A Sustainable Retail
-Business Strategy.”</span> July 31, 2025. <a href="https://lperusa7.github.io/lukaslescano.github.io/posts/coastal_refill_business_plan/">https://lperusa7.github.io/lukaslescano.github.io/posts/coastal_refill_business_plan/</a>.
+Lescano, Lukas. 2025. <span>“Modeling Wildfire Risk and Emergency
+Response Accessibility in Santa Barbara County.”</span> December 14,
+2025. <a href="https://lperusa7.github.io/lukaslescano.github.io/posts/Fire_Risk_SB_proj/">https://lperusa7.github.io/lukaslescano.github.io/posts/Fire_Risk_SB_proj/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
