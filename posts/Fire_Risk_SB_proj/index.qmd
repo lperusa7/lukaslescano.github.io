@@ -106,6 +106,8 @@ This 2:2:1 weighting structure reflects the greater explanatory relevance of fue
 
 The resulting weighted raster represents the combined influence of environmental susceptibility and response-time disparities, producing a spatially differentiated wildfire risk surface across Santa Barbara County.
 
+![](SB_Fire_Risk_Map.png){fig-align="center" width="70%"}
+
 ## Key Findings
 
 The final weighted wildfire risk surface revealed spatial patterns driven by both environmental fuel conditions and emergency response accessibility.
@@ -150,4 +152,9 @@ Future improvements could include incorporating slope, fuel moisture, and additi
 
 Despite these limitations, the project demonstrates how multi-criteria spatial analysis can integrate environmental and infrastructure-based variables into decision-support tools for hazard planning.
 
-## Deliverables
+## Project Presentation
+
+The full project presentation detailing data sources, modeling workflows, and results is displayed below.
+
+<iframe src="SB_Fire_Risk_Presentation.pdf" width="100%" height="700px" style="border: 1px solid #ddd; border-radius: 6px;">
+</iframe>
