@@ -1,0 +1,15 @@
+---
+title: "Modeling Wildfire Risk and Emergency Response Accessibility in Santa Barbara County"
+description: "Developed a multi-criteria wildfire risk model for Santa Barbara County using GIS-based spatial analysis. Led the network analysis component to evaluate emergency response accessibility by calculating travel distance to nearest fire stations, and integrated this layer with vegetation fuel risk, wind exposure, and precipitation data into a weighted composite raster surface."
+author:
+  - name: Lukas Lescano
+    url: https://lperusa7.github.io/lukaslescano.github.io/
+date: 12-14-25
+categories: [GIS & Spatial Analysis, Energy & Infrastructure]
+citation:
+  url: https://lperusa7.github.io/lukaslescano.github.io/posts/Fire_Risk_SB_proj/
+draft: false
+image: fire_risk_img.jpg
+format: html
+---
+
