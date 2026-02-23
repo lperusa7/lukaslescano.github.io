@@ -5,7 +5,7 @@ author:
   - name: Lukas Lescano
     url: https://lperusa7.github.io/lukaslescano.github.io/
 date: 12-14-25
-categories: [GIS & Spatial Analysis, Energy & Infrastructure]
+categories: [GIS & Spatial Analysis, Risk & Modeling Focus]
 citation:
   url: https://lperusa7.github.io/lukaslescano.github.io/posts/Fire_Risk_SB_proj/
 draft: false
