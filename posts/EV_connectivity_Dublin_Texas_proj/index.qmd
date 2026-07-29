@@ -2,7 +2,7 @@
 title: "Improving EV Infrastructure Connectivity with Spatial Data"
 description: "Conducted a comparative geospatial analysis of EV charging infrastructure in the United States and Ireland to assess connectivity, accessibility, and alignment with EV adoption patterns. Developed a spatial framework to inform strategic infrastructure expansion in underdeveloped regions such as Texas."
 author:
-  - name: Lukas Lescano
+    name: Lukas Lescano
     url: https://lperusa7.github.io/lukaslescano.github.io/
 date: 12-1-25
 categories: [GIS & Spatial Analysis, Energy & Infrastructure]

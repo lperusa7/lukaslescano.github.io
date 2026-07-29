@@ -25,14 +25,11 @@ The final output is a weighted composite raster map that identifies areas of ele
 
 The wildfire risk model was structured as a multi-criteria spatial framework integrating three core dimensions of risk:
 
-1. <u>Vegetation Susceptibility:</u><br>
-Fuel type plays a central role in wildfire behavior. Using historical wildfire perimeters and vegetation classification data, vegetation types were ranked based on the proportion of area previously burned. This produced a vegetation risk surface representing relative fuel vulnerability across the county.
+1.  <u>Vegetation Susceptibility:</u><br> Fuel type plays a central role in wildfire behavior. Using historical wildfire perimeters and vegetation classification data, vegetation types were ranked based on the proportion of area previously burned. This produced a vegetation risk surface representing relative fuel vulnerability across the county.
 
-2. <u>Climatic Exposure (Wind & Precipitation):</u><br>
-Wind intensity and precipitation patterns influence fire spread potential and fuel dryness. These raster layers were reclassified into standardized risk categories and combined to generate a weather-based exposure surface.
+2.  <u>Climatic Exposure (Wind & Precipitation):</u><br> Wind intensity and precipitation patterns influence fire spread potential and fuel dryness. These raster layers were reclassified into standardized risk categories and combined to generate a weather-based exposure surface.
 
-3. <u>Emergency Response Accessibility:</u><br>
-Response time significantly affects suppression effectiveness. Areas located farther from fire stations face increased risk due to delayed containment. This component was modeled using network analysis to estimate travel-time accessibility.
+3.  <u>Emergency Response Accessibility:</u><br> Response time significantly affects suppression effectiveness. Areas located farther from fire stations face increased risk due to delayed containment. This component was modeled using network analysis to estimate travel-time accessibility.
 
 Each of these layers was processed independently and standardized before integration. The final wildfire risk surface was generated through weighted raster analysis, allowing environmental and infrastructure-based factors to be evaluated simultaneously within a unified spatial framework.
 
@@ -40,13 +37,12 @@ Each of these layers was processed independently and standardized before integra
 
 ![](Fire_Risk_Network_Analysis_Layers.png){fig-align="center" width="70%"}
 
-
 To quantify emergency response disparities across Santa Barbara County, I conducted a network-based service area analysis using road infrastructure and fire station locations.
 
 ### Data Inputs
 
-- TIGER/Line Road Network (Vector Line)
-- Santa Barbara County Fire Stations (Vector Point)
+-   TIGER/Line Road Network (Vector Line)
+-   Santa Barbara County Fire Stations (Vector Point)
 
 ### Methodology
 
@@ -54,7 +50,7 @@ A network dataset was created from the county road layer within ArcGIS Network A
 
 Service areas were generated around each fire station using the following time cutoffs (minutes):
 
-- 0, 10, 20, 30, 50, 75, 100, and 150
+-   0, 10, 20, 30, 50, 75, 100, and 150
 
 These intervals produced overlapping response-time polygons representing incremental accessibility zones.
 
@@ -64,13 +60,13 @@ Because service areas from multiple stations overlapped, further processing was 
 
 A response-time risk ranking was then assigned:
 
-- 0–10 minutes → Risk Rank 1 (Lowest Risk)
-- 10–20 minutes → Risk Rank 2
-- 20–30 minutes → Risk Rank 3
-- 30–50 minutes → Risk Rank 4
-- 50–75 minutes → Risk Rank 5
-- 75–100 minutes → Risk Rank 6
-- 100–150 minutes → Risk Rank 7 (Highest Risk)
+-   0–10 minutes → Risk Rank 1 (Lowest Risk)
+-   10–20 minutes → Risk Rank 2
+-   20–30 minutes → Risk Rank 3
+-   30–50 minutes → Risk Rank 4
+-   50–75 minutes → Risk Rank 5
+-   75–100 minutes → Risk Rank 6
+-   100–150 minutes → Risk Rank 7 (Highest Risk)
 
 Longer travel times were classified as higher risk due to delayed suppression capacity and increased opportunity for fire spread.
 
@@ -79,7 +75,6 @@ Longer travel times were classified as higher risk due to delayed suppression ca
 The final output was a non-overlapping fire response accessibility layer representing the minimum achievable response time across the county. This layer was subsequently converted to raster format and integrated into the weighted wildfire risk model.
 
 ![](Fire_Response_Risk_Output.png){fig-align="center" width="70%"}
-
 
 ## Weighted Raster Integration
 
@@ -91,16 +86,16 @@ Before integration, all layers were projected into a common coordinate system, s
 
 To determine appropriate weighting, historical wildfire perimeter data were used as a reference layer to visually assess spatial agreement with each risk surface. Both the Vegetation Risk and Fire Response Risk layers demonstrated strong correspondence with past burn patterns:
 
-- The <b>Vegetation Risk layer</b> captured fuel types with historically higher burn proportions.
-- The <b>Fire Response Risk layer</b> highlighted areas where extended travel times may have contributed to larger or more difficult-to-control fires.
+-   The <b>Vegetation Risk layer</b> captured fuel types with historically higher burn proportions.
+-   The <b>Fire Response Risk layer</b> highlighted areas where extended travel times may have contributed to larger or more difficult-to-control fires.
 
 In contrast, the combined Wind and Precipitation layer exhibited less spatial variability and weaker alignment with historical fire extents.
 
 Based on this evaluation, the following weighting scheme was applied in the Raster Calculator:
 
-- Vegetation Risk × 2
-- Fire Response Risk × 2
-- Wind & Precipitation Risk × 1
+-   Vegetation Risk × 2
+-   Fire Response Risk × 2
+-   Wind & Precipitation Risk × 1
 
 This 2:2:1 weighting structure reflects the greater explanatory relevance of fuel conditions and emergency accessibility relative to climatic variability in the context of observed fire history.
 
@@ -128,19 +123,19 @@ The model developed in this project most closely reflects wildfire spread risk, 
 
 However, if the objective were to model wildfire ignition risk, the analytical framework would differ. An ignition-focused model would prioritize variables that influence fire start probability, such as:
 
-- Vegetation and fuel type
-- Fuel moisture
-- Precipitation deficits
-- Slope and topography
-- Human infrastructure or ignition sources
+-   Vegetation and fuel type
+-   Fuel moisture
+-   Precipitation deficits
+-   Slope and topography
+-   Human infrastructure or ignition sources
 
 In contrast, a spread-focused model would emphasize:
 
-- Wind exposure
-- Emergency response time
-- Road accessibility
-- Fuel continuity
-- Terrain features influencing fire behavior
+-   Wind exposure
+-   Emergency response time
+-   Road accessibility
+-   Fuel continuity
+-   Terrain features influencing fire behavior
 
 This distinction suggests that the current workflow could be separated into two independent modeling frameworks, each calibrated with its own weighting structure and validation approach. Such separation would improve clarity of purpose and allow for more precise risk communication.
 
@@ -157,4 +152,5 @@ Despite these limitations, the project demonstrates how multi-criteria spatial a
 The full project presentation detailing data sources, modeling workflows, and results is displayed below.
 
 <iframe src="SB_Fire_Risk_Presentation.pdf" width="100%" height="700px" style="border: 1px solid #ddd; border-radius: 6px;">
+
 </iframe>
