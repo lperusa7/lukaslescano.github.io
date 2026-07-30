@@ -15,13 +15,13 @@ about:
       href: https://github.com/lperusa7
     - icon: envelope
       text: Email
-      href: mailto::lukaslescano@ucsb.edu
+      href: mailto:lperusa7@gmail.com
 ---
 
-Hi, I’m Lukas Lescano, a fourth-year undergraduate at the University of California, Santa Barbara pursuing a Bachelor of Science in Environmental Studies with an emphasis in GIS and Energy & Sustainability.
+Hi, I'm Lukas Lescano. I recently graduated from the University of California, Santa Barbara with a Bachelor of Science in Environmental Science, with an emphasis in GIS and Energy & Sustainability.
 
-I’m driven by the challenge of accelerating the clean energy transition through data-informed planning and systems-level thinking. My academic and project work focuses on renewable energy integration, spatial analysis, and strategic approaches to decarbonization.
+I'm driven by the challenge of accelerating the clean energy transition through data-informed planning and systems-level thinking. My academic and project work focuses on renewable energy integration, spatial analysis, and strategic approaches to decarbonization.
 
-Growing up with a deep appreciation for natural systems and an interest in how complex systems function, I developed a passion for designing solutions that are both equitable and environmentally sustainable.
+My recent work includes solar accessibility and transmission line modeling, wildfire risk mapping, spatial interpolation of air quality data, and a solar plus battery storage model built in Excel using NREL's PVWatts.
 
-I am particularly interested in applying GIS, data analysis, and strategic planning to advance renewable energy deployment and resilient infrastructure.
+My focus is on solar and battery storage, from residential systems to utility-scale deployment. I am currently seeking opportunities in renewable energy project development and energy analysis.
