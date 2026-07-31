@@ -1,5 +1,4 @@
 ---
-
 title: "Resume"
 format: html
 toc: false
@@ -7,14 +6,11 @@ toc: false
 
 I recently graduated from UC Santa Barbara with a B.S. in Environmental Science, with an emphasis in GIS and Energy & Sustainability. My work centers on geospatial analysis and clean energy, and I am currently seeking roles in renewable energy project development and energy analysis.
 
-\[Download Resume (PDF)\](files/Lukas_Lescano_Resume.pdf){.btn .btn-outline-light target="\_blank"}
+[Download Resume (PDF)](files/Lukas_Lescano_Resume.pdf){.btn .btn-outline-light target="_blank"}
 
-\<object data="files/Lukas_Lescano_Resume.pdf" type="application/pdf" width="100%" height="900px"\>
+<object data="files/Lukas_Lescano_Resume.pdf" type="application/pdf" width="100%" height="900px">
+  <p>Your browser cannot display embedded PDFs.
+  <a href="files/Lukas_Lescano_Resume.pdf">Download the PDF</a>.</p>
+</object>
 
-\<p\>Your browser cannot display embedded PDFs.
-
-\<a href="files/Lukas_Lescano_Resume.pdf"\>Download the PDF\</a\>.\</p\>
-
-\</object\>
-
-\<p style="font-size: 0.85em; opacity: 0.6; margin-top: 1rem;"\>Last updated August 2026\</p\>
+<p style="font-size: 0.85em; opacity: 0.6; margin-top: 1rem;">Last updated August 2026</p>
