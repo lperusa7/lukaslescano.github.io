@@ -16,7 +16,7 @@ Outside of work I stay active through soccer, hiking, and time outdoors. I also 
 ------------------------------------------------------------------------
 
 ::: {layout="[1,2,1]"}
-![Family roots, four years old.](media/YoungSoccerPic.jpg)
+![Family roots, four years old. 2008.](media/YoungSoccerPic.jpg)
 
 ![Graduation pictures with friends. UCSB, June 2026.](media/grad_pic.jpg)
 
