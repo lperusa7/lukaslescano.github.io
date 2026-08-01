@@ -3,8 +3,6 @@ title: "About Me"
 format: html
 ---
 
-## About Me
-
 I grew up in Orange County, California, where I spent much of my time outdoors, playing sports, hiking, trail running, and at the beach. From a young age I was constantly asking questions and trying to figure out how things worked. That curiosity turned into a lasting interest in energy infrastructure and the spatial data that describes it.
 
 I recently graduated from UC Santa Barbara with a Bachelor of Science in Environmental Science, with an emphasis in GIS and Energy & Sustainability. Most of my coursework and research was geospatial: modeling solar accessibility and transmission corridors, mapping wildfire risk, and interpolating air quality data across Northern California after the 2017 wildfires. I also contributed to research on oil well performance, green space accessibility, and rural emergency service delivery.
