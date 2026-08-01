@@ -15,8 +15,12 @@ Outside of work I stay active through soccer, hiking, and time outdoors. I also 
 
 ------------------------------------------------------------------------
 
-::: {style="display: flex; gap: 16px; justify-content: center;"}
-![](media/YoungSoccerPic.jpg){alt="Hiking" width="33%"} <img src="media/sunset.jpg" alt="Sunset" width="33%"/>![](media/IMTeamPic.jpg){alt="Soccer" width="33%"}
+::: {layout="[1,2,1]"}
+![Family roots, four years old.](media/YoungSoccerPic.jpg)
+
+![Graduation pictures with friends. UCSB, June 2026.](media/grad_pic.jpg)
+
+![Presenting our solar siting research. UCSB, June 2026.](media/poster_symposium.jpg)
 :::
 
 ------------------------------------------------------------------------
